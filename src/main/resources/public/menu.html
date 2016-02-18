@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iMenu</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Zhuoqun Wang">
+	<meta name="description" content="iMenu-Web Standard&Technology Project"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<section class="h-top">
+        <h2>.</h2>
+		<header>
+            <div class="top-header" id="home">
+                <div class="top-header">
+                    <a href="index.html"><img src="img/logo.png" class="logo" alt="" title=""/></a>
+                    <a href="#" class="hamburger"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <a href="login.html" class="login_btn">Login</a>
+                    </nav>
+                </div>
+            </div>
+		</header><!--  end header section  -->
+
+	</section><!--  end hero section  -->
+    <div class="col-md-3 top-nav">
+        <div class="logo">
+            <a href="index.html"><h1>Hello!</h1></a>
+        </div>
+        <div class="top-menu">
+            <span class="menu"> </span>
+            
+            <ul class="cl-effect-16">
+                <li><a class="usercenter.html" href="index.html" data-hover="HOME">Manage</a></li>
+                <li><a href="#" data-hover="About">History</a></li>
+                <li><a href="#" data-hover="Grids">Favourites</a></li>
+                <li><a href="#" data-hover="Services">Upload</a></li>
+                <li><a href="#" data-hover="Gallery">On Diet</a></li>
+                <li><a href="#" data-hover="CONTACT">Need Help</a></li>
+            </ul>
+            <!-- script-for-nav -->
+            <script>
+                $( "span.menu" ).click(function() {
+                                       $( ".top-menu ul" ).slideToggle(300, function() {
+                                                                       // Animation complete.
+                                                                       });
+                                       });
+                </script>
+            <!-- script-for-nav --> 	
+            <ul class="side-icons">
+                <li><a class="fb" href="#"></a></li>
+                <li><a class="twitt" href="#"></a></li>
+                <li><a class="goog" href="#"></a></li>
+                <li><a class="drib" href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+
+<section class="listings">
+    <div class="wrapper">
+        <ul class="properties_list">
+            <li>
+             
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/food_3.jpg" alt="" title="" class="property_img"/>
+                </a>
+                <span class="price">900Calories</span>
+                <div class="property_details">
+                    <h2>
+                        <a href="#">Roasted Turkey</a>
+                    </h2>
+                    <h3>1 Turkey. <span class="property_size">...</span></h3>
+                </div>
+            </li>
+            <li>
+                Roasting a whole turkey is easier than you think. Just follow these simple instructions for a fresh or thawed turkey:
+                Preheat oven to 325° F. Drain juices and pat dry with clean paper towels.
+                Place turkey breast side up on a flat rack in a shallow roasting pan 2 to 2½ inches deep.
+                Turn the wings back to hold the neck skin in place. (Tucking the wings will help stabilize the turkey in the pan and when carving)   Brush or spray skin lightly with vegetable or cooking oil for best appearance.
+                Insert an oven-safe meat thermometer deep into the lower part of the thigh without touching the bone. When the thigh is up to temperature, and if the turkey is stuffed, move the thermometer to the center of the stuffing.
+                Place your turkey in the oven.
+                When the turkey is about ⅔ done, loosely cover breast and top of drumsticks with a piece of foil to prevent overcooking.
+                Your turkey is done when the temperature with a meat thermometer is 180° F in thigh and 165° F in breast or stuffing.
+                Lift turkey onto platter, and let stand for 15 minutes before carving.
+            </li>
+
+        </ul>
+        <div class="more_listing">
+            <a href="#" class="more_listing_btn">Favourites</a>
+        </div>
+        </div>
+</section>	<!--  end listing section  -->
+	<footer>
+		<div class="wrapper footer">
+			<ul>
+				<li class="links">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Policy</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</li>
+
+
+
+				<li class="links">
+					<ul>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">Zhuoqun Wang</a></li>
+						<li><a href="#">zhw59@pitt.edu</a></li>
+						<li><a href="#">UPitt</a></li>
+						<li><a href="#">Pittsburgh, PA</a></li>
+					</ul>
+				</li>
+                <li class="links">
+                    <ul>
+                        <li><a href="#">Pittsburgh</a></li>
+                        <li><a href="#">Pennsylvania</a></li>
+                        <li><a href="#">Phone: 4153415605</a></li>
+                        <li><a href="#">Zipcode: 15213</a></li>
+                        
+                    </ul>
+                </li>
+				<li class="about">
+					<p>iMenu is a Web app for your meal. Tell us what you have in the kitchen, and we help you decide what to eat today.</p>
+					<ul>
+						<li><a href="http://facebook.com/pixelhint" class="facebook" target="_blank"></a></li>
+						<li><a href="http://twitter.com/pixelhint" class="twitter" target="_blank"></a></li>
+						<li><a href="http://plus.google.com/+Pixelhint" class="google" target="_blank"></a></li>
+						<li><a href="#" class="skype"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="copyrights wrapper">
+			Copyright © 2016 <a href="#" target="_blank" class="ph_link" title="...">Zhuoqun Wang</a>. All Rights Reserved.
+		</div>
+	</footer><!--  end footer  -->
+	
+</body>
+</html>
