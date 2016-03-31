@@ -50,8 +50,8 @@ public class Main {
 		e.printStackTrace();
 	}
 	
-    //port(Integer.valueOf(System.getenv("PORT")));
-    port(8888);
+    port(Integer.valueOf(System.getenv("PORT")));
+    //port(8888);
     staticFileLocation("/public");
     
     UserService usrServ = new UserService();
