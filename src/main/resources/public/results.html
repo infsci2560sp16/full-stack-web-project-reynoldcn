@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iMenu</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Zhuoqun Wang">
+	<meta name="description" content="iMenu-Web Standard&Technology Project"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+                               $(".scroll").click(function(event){
+                                                  event.preventDefault();
+                                                  $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+                                                  });
+                               });
+        </script>
+</head>
+<body>
+
+	<div class="h-top">
+		<header>
+            <div class="top-header" id="home">
+                <div class="top-header">
+                    <a href="index.html"><img src="img/logo.png" class="logo" alt="" title=""/></a>
+                    <a href="#" class="hamburger"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <a href="login.html" class="login_btn">Login</a>
+                    </nav>
+                </div>
+            </div>
+		</header><!--  end header section  -->
+
+	</div><!--  end hero section  -->
+    <div class="col-md-3 top-nav">
+        <div class="logo">
+            <a href="index.html"><h1>Hello!</h1></a>
+        </div>
+        <div class="top-menu">
+            <span class="menu"> </span>
+            
+            <ul class="cl-effect-16">
+                <li><a class="usercenter.html" href="index.html" data-hover="HOME">Manage</a></li>
+                <li><a href="#" data-hover="About">History</a></li>
+                <li><a href="#" data-hover="Grids">Favourites</a></li>
+                <li><a href="upload.html" data-hover="Services">Upload</a></li>
+                <li><a href="#" data-hover="Gallery">On Diet</a></li>
+                <li><a href="#" data-hover="CONTACT">Need Help</a></li>
+            </ul>
+            <!-- script-for-nav -->
+            <script>
+                $( "span.menu" ).click(function() {
+                                       $( ".top-menu ul" ).slideToggle(300, function() {
+                                                                       // Animation complete.
+                                                                       });
+                                       });
+                </script>
+            <!-- script-for-nav --> 	
+            <ul class="side-icons">
+                <li><a class="fb" href="#"></a></li>
+                <li><a class="twitt" href="#"></a></li>
+                <li><a class="goog" href="#"></a></li>
+                <li><a class="drib" href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+
+<section class="listings">
+    <div class="wrapper">
+        <ul class="properties_list">
+            <li>
+             
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/food_1.jpg" alt="" title="" class="property_img"/>
+                </a>
+                <span class="price">900Calories</span>
+                <div class="property_details">
+                    <h2>
+                        <a href="#">fried tomatoes with egg</a>
+                    </h2>
+                    <h3>1 tomatoes, 1 eggs. <span class="property_size">...</span></h3>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/food_3.jpg" alt="" title="" class="property_img"/>
+                </a>
+                <span class="price">200Calories</span>
+                <div class="property_details">
+                    <h2>
+                        <a href="menu.html">Roasted Turkey</a>
+                    </h2>
+                    <h3>1 Turkey <span class="property_size">...</span></h3>
+                </div>
+            </li>
+            <li>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/food_2.jpg" alt="" title="" class="property_img"/>
+                </a>
+                <span class="price">900Calories</span>
+                <div class="property_details">
+                    <h2>
+                        <a href="#">Beef Humbugers</a>
+                    </h2>
+                    <h3>Beef, Bread. <span class="property_size">...</span></h3>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/food_4.jpg" alt="" title="" class="property_img"/>
+                </a>
+                <span class="price">1000Calories</span>
+                <div class="property_details">
+                    <h2>
+                        <a href="#">Fried Steak</a>
+                    </h2>
+                    <h3>1 Beef, Butter. <span class="property_size">...</span></h3>
+                </div>
+                
+            </li>
+
+            </ul>
+        </div>
+    <div class="more_listing">
+        <a href="#" class="more_listing_btn">New Search</a>
+    </div>
+            </section>	<!--  end listing section  -->
+	<footer>
+		<div class="wrapper footer">
+			<ul>
+				<li class="links">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Policy</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</li>
+
+
+
+				<li class="links">
+					<ul>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">Zhuoqun Wang</a></li>
+						<li><a href="#">zhw59@pitt.edu</a></li>
+						<li><a href="#">UPitt</a></li>
+						<li><a href="#">Pittsburgh, PA</a></li>
+					</ul>
+				</li>
+                <li class="links">
+                    <ul>
+                        <li><a href="#">Pittsburgh</a></li>
+                        <li><a href="#">Pennsylvania</a></li>
+                        <li><a href="#">Phone: 4153415605</a></li>
+                        <li><a href="#">Zipcode: 15213</a></li>
+                        
+                    </ul>
+                </li>
+				<li class="about">
+					<p>iMenu is a Web app for your meal. Tell us what you have in the kitchen, and we help you decide what to eat today.</p>
+					<ul>
+						<li><a href="http://facebook.com/pixelhint" class="facebook" target="_blank"></a></li>
+						<li><a href="http://twitter.com/pixelhint" class="twitter" target="_blank"></a></li>
+						<li><a href="http://plus.google.com/+Pixelhint" class="google" target="_blank"></a></li>
+						<li><a href="#" class="skype"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="copyrights wrapper">
+			Copyright © 2016 <a href="#" target="_blank" class="ph_link" title="...">Zhuoqun Wang</a>. All Rights Reserved.
+		</div>
+	</footer><!--  end footer  -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+                          /*
+                           var defaults = {
+                           containerID: 'toTop', // fading element id
+                           containerHoverID: 'toTopHover', // fading element hover id
+                           scrollSpeed: 1200,
+                           easingType: 'linear'
+                           };
+                           */
+                          
+                          $().UItoTop({ easingType: 'easeOutQuart' });
+                          
+                          });
+    </script>
+</body>
+</html>
