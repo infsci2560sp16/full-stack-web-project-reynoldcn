@@ -9,15 +9,16 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
-
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
-<div class="hero">
+<div class="h-top">
 <header>
-<div class="wrapper">
+<div class="top-header" id="home">
+<div class="top-header">
 <a href="index.html"><img src="img/logo.png" class="logo" alt="" title=""/></a>
 <a href="#" class="hamburger"></a>
 <nav>
@@ -25,82 +26,115 @@
 <li><a href="#">About</a></li>
 <li><a href="#">Contact</a></li>
 </ul>
-	<a href="account.html" class="login_btn">wzq</a>
+<#if isLogin = true>
+<a href="account.html" class="login_btn">${userName}</a>
+<#else>
+<a href="login.html" class="login_btn">Login</a>
+</#if>
 </nav>
+</div>
 </div>
 </header><!--  end header section  -->
 
-<div class="caption">
-<h2 class="caption">What's in Your Kitchen?</h2>
-<h3 class="properties">We help you make a wonderful meal</h3>
-</div>
 </div><!--  end hero section  -->
-
-
-<div class="search">
-<div class="wrapper">
-<form action="RestController" method="post">
-<input type="text" id="search" name="search" placeholder="What are there in your kitchen, tomato, patato or ...?"  autocomplete="off"/>
-<input type="submit" id="submit_search" name="submit_search"/>
-</form>
-<a href="#" class="advanced_search_icon" id="advanced_search_btn"></a>
+<div class="col-md-3 top-nav">
+<div class="logo">
+<a href="index.html"><h1>Hello!</h1></a>
 </div>
+<div class="top-menu">
+<span class="menu"> </span>
 
-<div class="advanced_search">
-<div class="wrapper">
-<span class="arrow"></span>
-
+<ul class="cl-effect-16">
+<li><a class="usercenter.html" href="index.html" data-hover="HOME">Manage</a></li>
+<li><a href="#" data-hover="About">History</a></li>
+<li><a href="#" data-hover="Grids">Favourites</a></li>
+<li><a href="#" data-hover="Services">Upload</a></li>
+<li><a href="#" data-hover="Gallery">On Diet</a></li>
+<li><a href="#" data-hover="CONTACT">Need Help</a></li>
+</ul>
+<!-- script-for-nav -->
+<script>
+$( "span.menu" ).click(function() {
+$( ".top-menu ul" ).slideToggle(300, function() {
+// Animation complete.
+});
+});
+</script>
+<!-- script-for-nav -->
+<ul class="side-icons">
+<li><a class="fb" href="#"></a></li>
+<li><a class="twitt" href="#"></a></li>
+<li><a class="goog" href="#"></a></li>
+<li><a class="drib" href="#"></a></li>
+</ul>
 </div>
-</div><!--  end advanced search section  -->
-</div><!--  end search section  -->
-
+</div>
 
 <section class="listings">
 <div class="wrapper">
 <ul class="properties_list">
 <li>
-<a href="#">
-<img src="img/food_1.jpg" alt="" title="" class="property_img"/>
-</a>
-<span class="price">900Calories</span>
-<div class="property_details">
-<h1>
-<a href="#">fried tomatoes with egg</a>
-</h1>
-<h2>1 tomatoes, 1 eggs. <span class="property_size">...</span></h2>
-</div>
+
 </li>
 <li>
 <a href="#">
-<img src="img/food_2.jpg" alt="" title="" class="property_img"/>
+<img src="img/user.jpg" alt="" title="" class="property_img"/>
 </a>
-<span class="price">900Calories</span>
+
 <div class="property_details">
-<h1>
-<a href="#">Beef Humbugers</a>
-</h1>
-<h2>Beef, Bread. <span class="property_size">...</span></h2>
+<h2>
+<a href="#">Zhuoqun Wang</a>
+</h2>
+<h3>CEO of iMenu <span class="property_size">...</span></h3>
 </div>
 </li>
 <li>
-<a href="#">
-<img src="img/food_3.jpg" alt="" title="" class="property_img"/>
-</a>
-<span class="price">200Calories</span>
-<div class="property_details">
-<h1>
-<a href="#">Roasted Turkey</a>
-</h1>
-<h2>1 Turkey <span class="property_size">...</span></h2>
+<form >
+
+<h4>Manage Account</h4>
+
+
+<p>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+</p>
+
+<p>
+<label for="company">Age:</label>
+<input type="text" id="company" name="company">
+</p>
+
+<p>
+<label for="email">Email Address:</label>
+<input type="text" id="email" name="email">
+</p>
+
+<p>
+<label for="phone">Phone Number:</label>
+<input type="text" id="phone" name="phone">
+</p>
+
+<p>
+<label for="location">Location (city):</label>
+<input type="text" id="location" name="location">
+</p>
+
+<p>
+<label>Describe:</label>
+<textarea rows="10" name="message"></textarea>
+</p>
+<div class="dots">
+<input class="submit" type="submit" name="submit" value="send">
 </div>
+</form>
 </li>
+
 </ul>
-</div>
 <div class="more_listing">
-<a href="results.html" class="more_listing_btn">View More Listings</a>
+<a href="#" class="more_listing_btn">Back</a>
+</div>
 </div>
 </section>	<!--  end listing section  -->
-
 <footer>
 <div class="wrapper footer">
 <ul>
@@ -122,20 +156,17 @@
 <li><a href="#">Zhuoqun Wang</a></li>
 <li><a href="#">zhw59@pitt.edu</a></li>
 <li><a href="#">UPitt</a></li>
-<li><a href="#">MSIS, iSchool</a></li>
+<li><a href="#">Pittsburgh, PA</a></li>
 </ul>
 </li>
 <li class="links">
 <ul>
-	<li><a href="#">Pittsburgh</a></li>
-	<li><a href="#">PA</a></li>
-	<li><a href="#">Tele: 4153415605</a></li>
-	<li><a href="#">Zipcode: 15213</a></li>
-
+<#list profile as item>
+<li><a href="#">${item}</a></li>
+</#list>
 
 </ul>
 </li>
-
 <li class="about">
 <p>iMenu is a Web app for your meal. Tell us what you have in the kitchen, and we help you decide what to eat today.</p>
 <ul>

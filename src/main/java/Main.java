@@ -12,16 +12,31 @@ import spark.ModelAndView;
 import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
+import logicTier.webWriter.*;
 
 public class Main {
 
   public static void main(String[] args) {
 
-    port(Integer.valueOf(System.getenv("PORT")));
+    //port(Integer.valueOf(System.getenv("PORT")));
+	port(8888);
     staticFileLocation("/public");
 
     get("/hello", (req, res) -> "Hello World");
-
+    //Test FreeMarker using index.html & account.html
+    try{
+		FtlWriter indexfw = new FtlWriter("index");
+		indexfw.setParam("wzq", true, new String[]{"Pittsburgh", "PA", "Tele: 4153415605", "Zipcode: 15213"});
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+	
+	try{
+		FtlWriter accountfw = new FtlWriter("account");
+		accountfw.setParam("wangzhuoqun", true, new String[]{"Pittsburgh", "PA", "Tele: 4153415605", "Zipcode: 15213"});
+	}catch(Exception e){
+		e.printStackTrace();
+	}
 
 
     get("/db", (req, res) -> {
