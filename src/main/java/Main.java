@@ -28,8 +28,8 @@ public class Main {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		//port(Integer.valueOf(System.getenv("PORT")));
-		port(8888);
+		port(Integer.valueOf(System.getenv("PORT")));
+		//port(8888);
 		staticFileLocation("/public");
 		
 		//RESTFul get/post JSON, get XML
