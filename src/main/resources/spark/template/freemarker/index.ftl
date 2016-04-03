@@ -7,18 +7,17 @@
 <meta name="description" content="iMenu-Web Standard&Technology Project"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/responsive.css">
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
 
 <div class="hero">
 <header>
 <div class="wrapper">
-<a href="index.html"><img src="img/logo.png" class="logo" alt="" title=""/></a>
+<a href="index.html"><img src="../img/logo.png" class="logo" alt="" title=""/></a>
 <a href="#" class="hamburger"></a>
 <nav>
 <ul>
@@ -64,7 +63,7 @@
 <ul class="properties_list">
 <li>
 <a href="#">
-<img src="img/food_1.jpg" alt="" title="" class="property_img"/>
+<img src="../img/food_1.jpg" alt="" title="" class="property_img"/>
 </a>
 <span class="price">900Calories</span>
 <div class="property_details">
@@ -76,7 +75,7 @@
 </li>
 <li>
 <a href="#">
-<img src="img/food_2.jpg" alt="" title="" class="property_img"/>
+<img src="../img/food_2.jpg" alt="" title="" class="property_img"/>
 </a>
 <span class="price">900Calories</span>
 <div class="property_details">
@@ -88,7 +87,7 @@
 </li>
 <li>
 <a href="#">
-<img src="img/food_3.jpg" alt="" title="" class="property_img"/>
+<img src="../img/food_3.jpg" alt="" title="" class="property_img"/>
 </a>
 <span class="price">200Calories</span>
 <div class="property_details">

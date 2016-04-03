@@ -42,12 +42,12 @@
 <span class="menu"> </span>
 
 <ul class="cl-effect-16">
-<li><a class="usercenter.html" href="index.html" data-hover="HOME">Manage</a></li>
-<li><a href="#" data-hover="About">History</a></li>
-<li><a href="#" data-hover="Grids">Favourites</a></li>
-<li><a href="upload.html" data-hover="Services">Upload</a></li>
-<li><a href="#" data-hover="Gallery">On Diet</a></li>
-<li><a href="#" data-hover="CONTACT">Need Help</a></li>
+<li><a class="usercenter.html" href="index.html" data-hover="Manage">Manage</a></li>
+<li><a href="#" data-hover="History">History</a></li>
+<li><a href="#" data-hover="Favourites">Favourites</a></li>
+<li><a href="upload.html" data-hover="Upload">Upload</a></li>
+<li><a href="#" data-hover="On Diet">On Diet</a></li>
+<li><a href="#" data-hover="Need Help">Need Help</a></li>
 </ul>
 <!-- script-for-nav -->
 <script>
@@ -73,57 +73,29 @@ $( ".top-menu ul" ).slideToggle(300, function() {
 <li>
 
 </li>
-<script>
-    function browseByMake () {
-        var obj = JSON.stringify({"make" : $( "#make" ).val()});
-        $.ajax({
-               contentType:'application/json',
-               url : "/upload/recipe",
-               type : "post",
-               dataType: "json",
-               data : obj,
-               success : function(recipe) {
-               console.log(recipe);
-               $("#inv").html("");
-               for ( var i = 0; i < recipe.length; i++) {
-               $("#inv").prepend(
-                                 '<div id="' + recipe[i].id + '">' +
 
-                                 '<div>' +
-                                 '<h3>' + recipe[i].id + ' ' + '</h3>' +
-                                 '<h4>$' + recipe[i].name + '</h4>' +
-                                 '<h4>' + recipe[i].ingredients + '</h4>' +
-                                 '</div>' +
-                                 '</div>' +
-                                 '<hr>'
-                                 );
-               }
-               }
-               });
-    }
-</script>
 <li>
-<form class="form-2" action="browseByMake()" method="post" name="newrecipe">
+<form class="form-2" action="/upload/recipe" method="post" name="newrecipe">
 <h4>Upload a new recipe</h4>
 
-<p>
-<label for="name">Name:</label>
-<input type="text" id="name" name="name">
-</p>
+    <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </p>
 
-<p>
-<label >id:</label>
-<input type="text" id="id" name="id">
-</p>
+    <p>
+        <label >id:</label>
+        <input type="text" id="id" name="id">
+    </p>
 
-<p>
-<label >Ingredients:</label>
-<input type="text" id="ingredients" name="ingredients">
-</p>
-<p  class="clearfix" >
-<a href="index.html" class="log-twitter">back</a>
-<input type="submit" name="submit" value="submit">
-</p>
+    <p>
+        <label >Ingredients:</label>
+        <input type="text" id="ingredients" name="ingredients">
+    </p>
+    <p  class="clearfix" >
+        <a href="index.html" class="log-twitter">back</a>
+        <input type="submit" name="submit" value="submit">
+    </p>
 </form>
 </li>
 
