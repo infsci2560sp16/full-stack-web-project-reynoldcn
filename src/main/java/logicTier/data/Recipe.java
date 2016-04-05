@@ -6,6 +6,15 @@ public class Recipe {
 	String id;
 	String name;
 	ArrayList<String> Ingredients;
+	String time = "10min";
+	String difficulty = "Easy";
+	String creator = "Zhuoqun Wang";
+	String popularity = "Very";
+	String type = "Chinese Cuisine";
+	String date = "2016-01-01";
+	String flavor = "Salty";
+	
+	
 	
 	public Recipe(String id, String name, ArrayList<String> Ingredients){
 		this.id = id;
@@ -62,7 +71,15 @@ public class Recipe {
 			rcpXml += "<ingredient>" + food + "</ingredient>";
 		}
 		rcpXml += "</ingredients>";
+		rcpXml += "<time>" + this.time + "</time>";
+		rcpXml += "<difficulty>" + this.difficulty + "</difficulty>";
+		rcpXml += "<creator>" + this.creator + "</creator>";
+		rcpXml += "<popularity>" + this.popularity + "</popularity>";
+		rcpXml += "<type>" + this.type + "</type>";
+		rcpXml += "<date>" + this.date + "</date>";
+		rcpXml += "<flavor>" + this.flavor + "</flavor>";
 		rcpXml += "</recipe>";
+		
 		return rcpXml;
 	}
 	

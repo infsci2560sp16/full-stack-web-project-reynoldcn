@@ -104,8 +104,21 @@ document.write(xmlDoc.getElementsByTagName("name")[0].firstChild.nodeValue);
 document.write("<br>Id: ");
 document.write(xmlDoc.getElementsByTagName("id")[0].firstChild.nodeValue);
 document.write("<br>Ingredients: ");
-document.write(xmlDoc.getElementsByTagName("ingredient[0].firstChild.nodeValue"));
-
+document.write(xmlDoc.getElementsByTagName("ingredient")[0].firstChild.nodeValue);
+document.write("<br>Cook Time: ");
+document.write(xmlDoc.getElementsByTagName("time")[0].firstChild.nodeValue);
+document.write("<br>Difficulty: ");
+document.write(xmlDoc.getElementsByTagName("difficulty")[0].firstChild.nodeValue);
+document.write("<br>Creator: ");
+document.write(xmlDoc.getElementsByTagName("creator")[0].firstChild.nodeValue);
+document.write("<br>Popularity: ");
+document.write(xmlDoc.getElementsByTagName("popularity")[0].firstChild.nodeValue);
+document.write("<br>Type: ");
+document.write(xmlDoc.getElementsByTagName("type")[0].firstChild.nodeValue);
+document.write("<br>Upload Date: ");
+document.write(xmlDoc.getElementsByTagName("date")[0].firstChild.nodeValue);
+document.write("<br>Flavor: ");
+document.write(xmlDoc.getElementsByTagName("flavor")[0].firstChild.nodeValue);
 }
 catch(e) {alert(e.message)}
 </script>

@@ -57,7 +57,7 @@ public class RestController {
 		    	rcp = new Recipe("null", "null", new ArrayList<String>());
 		    	System.out.println("nenene");
 		    }
-		    attributes.put("xml", rcp.toXMLPrint());
+		    attributes.put("xml", rcp.toXML());
 		    attributes.put("results", rcp.toXML());
 			System.out.println(rcp.toJson());
 			return new ModelAndView(attributes, "recipe_xml.ftl");
